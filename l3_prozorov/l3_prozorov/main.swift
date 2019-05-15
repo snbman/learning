@@ -57,11 +57,15 @@ struct truck {
     }
 }
 var car1 = car(mark: "bmw", date: 2016, trunkVolume: 350, engineState: .on, windowsState: .open, cargo: 200 )
+car1.windowsState = .close
 var car2 = car(mark: "Honda", date: 1996, trunkVolume: 200, engineState: .off, windowsState: .close, cargo: 100)
+car2.cargo = 50.6
 var car3 = car(mark: "Mercedes", date: 2019, trunkVolume: 500, engineState: .on, windowsState: .close, cargo: 0)
 var truck1 = truck(mark: "MAN", date: 2017, bodyVolume: 2500, cargo: 1000.70, windowsState: .close, engineState: .off)
 var truck2 = truck(mark: "VOLVO", date: 2005, bodyVolume: 5500, cargo: 3500.5, windowsState: .open, engineState: .on)
-print (car2.mark)
+
+print (car1.windowsState)
+print (car2.cargo)
 print (car3.trunkVolume)
 print (truck1.windowsState)
 print (truck2.date)
